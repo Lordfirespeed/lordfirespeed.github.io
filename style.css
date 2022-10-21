@@ -1,0 +1,29 @@
+:root {
+    --highlight-colour: #97DFFC;
+    --midlight-colour: #858AE3;
+    --neutral-colour: #613DC1;
+    --dark-colour: #4E148C;
+    --darkest-colour: #2C0735;
+
+    --background-colour: #242526;
+    --font-colour: #B0B3B8;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background-colour);
+    color: var(--font-colour);
+    margin: 10px;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font-family: monospace;
+}
+
+a {
+    color: var(--neutral-colour);
+}
+
+a:hover {
+    color: var(--midlight-colour);
+}
