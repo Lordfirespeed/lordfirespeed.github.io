@@ -1,4 +1,6 @@
 {
+  "name": "lordfirespeed.gitpages.io",
+  "version": "0.0.1",
   "dependencies": {
     "bootstrap": "^5.2.2"
   }
