@@ -5,16 +5,11 @@ fetch("/assets/navbar.html")
 function define(html) {
     class NavBar extends HTMLElement {
         on_document_loaded() {
-            Array.prototype.forEach.call(
-                this.getElementsByClassName("nav-link"),
-                (nav_link_element) => {
-                    if (nav_link_element.pathname !== window.location.pathname) {return}
-                    console.log("mug")
+            let active_name = this.getAttribute("current-active");
+            let nav_link_element = document.getElementById("navbar-nav-link-" + active_name);
 
-                    nav_link_element.classList.add("active");
-                    nav_link_element.setAttribute("aria-current","page");
-                }
-            );
+            nav_link_element.classList.add("active");
+            nav_link_element.setAttribute("aria-current","page");
         }
 
         constructor() {
